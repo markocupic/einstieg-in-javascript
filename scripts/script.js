@@ -35,7 +35,7 @@ function berechne() {
         console.log('Deine Eingabe war: ' + radius + '. Bitte gib eine Zahl ein!');
 
         // Fehler im Browser anzeigen
-        jQuery('#resultBoxFlaeche').html('<p>Bitte gib eine Zahl ein! </p>');
+        jQuery('#resultBoxFlaeche').html('<p>Bitte gib eine Zahl ein!</p>');
     }
 
     // Oder wenn anstatt einer Zahl Text eingegeben wurde, reklamiere ebenfalls
