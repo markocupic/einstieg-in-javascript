@@ -7,8 +7,9 @@ jQuery(document).ready(function() {
 		// Hier bekommst du den Inahlt des Eingabefeldes Radius
 		// in der Variablen radius speicherst du den Radius
 		var radius = jQuery('#inputRadius').val();
-		radius = Number(radius);
-		console.log(Math.PI);
+		
+		// Eingabe in Zahl umwandeln (typecasting)
+		radius = Number(radius)
 		
 		// Prüfe, ob etwas eingegeben wurde
 		if(radius == "")
