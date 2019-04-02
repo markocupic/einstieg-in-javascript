@@ -4,12 +4,12 @@ jQuery(document).ready(function() {
 	// Führe bei Klick auf den Button folgende Funktion aus.
 	jQuery('#submitButton').on('click', function(){
 		
-		// Hier bekommst du den Inahlt des Eingabefeldes Radius
-		// in der Variablen radius speicherst du den Radius
+		// Hier bekommst du den Inhalt des Eingabefeldes Radius
+		// In der Variablen "radius" speicherst du den Radius
 		var radius = jQuery('#inputRadius').val();
 		
 		// Eingabe in Zahl umwandeln (typecasting)
-		radius = Number(radius)
+		radius = Number(radius);
 		
 		// Prüfe, ob etwas eingegeben wurde
 		if(radius == "")
