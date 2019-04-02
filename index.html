@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Projekt</title>
+	<!-- Zeige Umlaute (ä,ö,ü) korrekt an. -->
+	
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	
+	<!-- jQuery Programmbibliothek einbinden -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Eigenes Script einbinden -->	
+	<script src="scripts/script.js"></script>
+	
+	<!-- CSS Stylesheet einbinden -->
+	<link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+
+</head>
+
+<body>
+	<section id="wrapper">
+		<section id="header">
+			<h1>Kreisfläche und Kreisumfang berechnen</h1>
+		</section>
+		<section id="main">
+			<p>Dieses kleine Programm berechnet dir aus dem Radius die Kreisfläche und den Kreisumfang</p>
+			<!-- Etwas Abstand -->
+			<br>
+			<br>
+			<img src="images/kreis.jpg">
+			<br>
+			<br>
+			
+			<!-- Hier gibst du den Radius ein. -->
+			<label for="inputRadius">Bitte den Radius eingeben</label>
+			<br>
+			<input id="inputRadius" name="radius" type="text" placeholder="Radius">
+			
+			<!-- Etwas Abstand -->
+			<br>
+			<br>
+			<br>
+			
+			<button id="submitButton" type="submit">Berechnung starten</button>
+			
+			<!-- Etwas Abstand -->
+			<br>
+			<br>
+			
+			<!-- Zeige hier die Fläche an -->
+			<p>Lösung:</p>
+			<div id="resultBoxFlaeche">
+			
+			</div>
+			
+			<!-- Zeige hier den Umfang an -->
+			<div id="resultBoxUmfang">
+			
+			</div>		
+		</section><!-- End main-->
+		
+		<section id="footer">
+		<p>Skript von Marko Cupic 2019</p>
+		<img src="images/footer.jpg">
+		</section>
+	</section>
+</body>
+</html>
