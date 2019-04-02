@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
 			umfang = umfang.toFixed(2);
 			
 			// Geschafft: Ausgabe der Lösung im Browser ;-)
-			jQuery('#resultBoxFlaeche').text('Alles klar! Der Umfang des Kreises beträgt ' + umfang + ' cm und die Fläche beträgt ' + flaeche + ' cm^2.');
+			jQuery('#resultBoxFlaeche').text('Alles klar! Der Umfang des Kreises beträgt ' + umfang + ' cm und die Fläche beträgt ' + flaeche + ' cm&sup2;.');
 		}
 		
 	});// End jQuery('#submitButton').on('click', ...
