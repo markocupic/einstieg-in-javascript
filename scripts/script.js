@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
 		// Eingabe in Zahl umwandeln (typecasting)
 		radius = Number(radius);
 		
-		// Prüfe, ob etwas eingegeben wurde
+		// Wenn nichts eingegeben wurde, reklamiere
 		if(radius == "")
 		{
 			// Fehler-Ausgabe in der Konsole Shift + j
@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
 			jQuery('#resultBoxFlaeche').text('Bitte gib eine Zahl ein!');
 		}
 		
-		// Reklamiere auch, wenn anstatt einer Zahl Text eingegeben wurde
+		// Oder wenn anstatt einer Zahl Text eingegeben wurde, reklamiere ebenfalls
 		else if(typeof radius != 'number')
 		{
 			// Fehler-Ausgabe in der Konsole Shift + j
@@ -29,13 +29,14 @@ jQuery(document).ready(function() {
 			jQuery('#resultBoxFlaeche').text('Bitte gib eine Zahl ein, nicht Text!');
 		}
 		
-		// Wenn die Eingabe gültig ist, starte mit der Berechnung
+		// Ansonsten (wenn die Eingabe gültig ist) starte mit der Berechnung der Fläche und des Umfangs
 		else
 		{
 			// ***** Jetzt wird gerechnet ******
 			
 			// Speichere die Fläche in der Variablen "flaeche" ab.
-			var flaeche = radius*radius*Math.PI;
+			// radius**2 bedeutet radius hoch 2
+			var flaeche = (radius**2)*Math.PI;
 			
 			// Speichere den Umfang in der Variablen "umfang" ab.
 			var umfang = 2*radius*Math.PI;
