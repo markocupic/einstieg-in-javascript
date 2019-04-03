@@ -26,7 +26,7 @@ function berechne() {
     var radius = jQuery('#inputRadius').val();
 
     // Leerzeichen entfernen (ersetze Leerzeichen mit "nichts")
-    radius = radius.replace(' ', '');
+    radius = radius.replace(/\s/g, "")
 
     // Wenn nichts eingegeben wurde, reklamiere
     if (radius == "")
@@ -35,7 +35,7 @@ function berechne() {
         console.log('Deine Eingabe war: ' + radius + '. Bitte gib eine Zahl ein!');
 
         // Fehler im Browser anzeigen
-        jQuery('#resultBoxFlaeche').html('<p>Bitte gib eine Zahl ein!</p>');
+        jQuery('#resultBox').html('<p>Bitte gib eine Zahl ein!</p>');
     }
 
     // Oder wenn anstatt einer Zahl Text eingegeben wurde, reklamiere ebenfalls
@@ -46,7 +46,7 @@ function berechne() {
         console.log('Deine Eingabe war: ' + radius + '. Bitte gib eine Zahl ein, nicht Text und keine Einheiten!');
 
         // Fehler im Browser anzeigen
-        jQuery('#resultBoxFlaeche').html('<p>Bitte gib eine Zahl ein, nicht Text und keine Einheiten!</p>');
+        jQuery('#resultBox').html('<p>Bitte gib eine Zahl ein, nicht Text und keine Einheiten!</p>');
     }
 
     // Ansonsten (wenn die Eingabe gültig ist) starte mit der Berechnung der Fläche und des Umfangs
@@ -67,6 +67,6 @@ function berechne() {
         umfang = umfang.toFixed(2);
 
         // Geschafft: Ausgabe der Lösung im Browser ;-)
-        jQuery('#resultBoxFlaeche').html('<p>Alles klar! Der Umfang des Kreises beträgt ' + umfang + ' cm und die Fläche beträgt ' + flaeche + ' cm&sup2;.</p>');
+        jQuery('#resultBox').html('<p>Alles klar! Der Umfang des Kreises beträgt ' + umfang + ' cm und die Fläche beträgt ' + flaeche + ' cm&sup2;.</p>');
     }
 }
