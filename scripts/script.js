@@ -26,16 +26,16 @@ function berechne() {
     var radius = jQuery('#inputRadius').val();
 
     // Leerzeichen entfernen (ersetze Leerzeichen mit "nichts")
-    radius = radius.replace(/\s/g, "")
+    radius = radius.replace(/\s/g, "");
 
     // Wenn nichts eingegeben wurde, reklamiere
     if (radius == "")
     {
         // Fehler-Ausgabe in der Konsole Shift + j
-        console.log('Deine Eingabe war: ' + radius + '. Bitte gib eine Zahl ein!');
+        console.log('Deine Eingabe war leer. Bitte gib eine Zahl ein!');
 
         // Fehler im Browser anzeigen
-        jQuery('#resultBox').html('<p>Bitte gib eine Zahl ein!</p>');
+        jQuery('#resultBox').html('<p>Deine Eingabe war leer. Bitte gib eine Zahl ein!</p>');
     }
 
     // Oder wenn anstatt einer Zahl Text eingegeben wurde, reklamiere ebenfalls
